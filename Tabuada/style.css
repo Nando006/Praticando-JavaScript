@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+}
+
+main {
+    background-image: linear-gradient(to bottom, white, rgb(143, 123, 123));
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.467);
+    width: 400px;
+    height: 500px;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+    color: rgb(255, 0, 111);
+    text-shadow: 0px 0px 3px rgb(250, 0, 0);
+    letter-spacing: 4px;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+div {
+    height: 50px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 1.7em;
+    color: rgb(95, 84, 84);
+    margin-right: 10px;
+}
+
+input[type = 'number'] {
+    height: 30px;
+    width: 100px;
+    border: white;
+    border-radius: 5px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.111);
+    outline-color: white;
+    transition: 0.3s ease-in-out;
+    font-size: 1.2em;
+    color: gray;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+input[type='number']:hover {
+    width: 150px;
+    transition: 0.3s ease-in-out;
+}
+
+#multiplicar {
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    width: 120px;
+    margin: 0px 33%;
+    font-weight: bold;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.307);
+    background-color: white;
+    color: rgb(99, 99, 99);
+    animation: sombra 1.5s infinite;
+    transition: 0.5s;
+}
+
+#multiplicar:hover {
+    width: 150px;
+    background-color: rgba(254, 254, 254, 0.486);
+    transition: 0.5s;
+}
+
+#multiplicar:active {
+    background-color: white;
+    transition: 0.2s;
+}
+
+@keyframes sombra {
+    50% {
+        box-shadow: 0px 5px 10px rgba(255, 0, 111, 0.494);
+    }
+}
+
+#lista {
+    display: flex;
+    padding: 10px;
+    border: none;
+    outline-color: white;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.397);
+    cursor: pointer;
+    width: 250px;
+    margin: 20px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+option[value = 'tittle'] {
+    pointer-events: none;
+    color:rgb(255, 0, 111);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+option[value = 'tabuando'] {
+    font-weight: bold;
+}
