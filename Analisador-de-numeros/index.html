@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Analisador de Números</title>
+    </head>
+    <body>
+        <header>
+            <h1>Analisador de Números</h1>
+        </header>
+        <main>
+            <div>
+                <label for="numero">Digite Um Número</label>
+                <input type="number" name="numero" id="numero" min="0" max="100" title="Número de 1 a 100">
+                <input type="button" value="Adicionar" id="adicionar">
+            </div>
+            <div id="listinha">
+                <select name="lista" id="lista" size="15" title="Números Adicionados"></select>
+            </div>
+            <div id="buttons">
+                <input type="button" value="Finalizar" id="finalizar" class="butoes">
+                <input type="button" value="Resetar" id="reset" class="butoes">
+            </div>
+        </main>
+        <article>
+            <p id="res">
+                Carregando...
+            </p>
+        </article>
+
+        <script src="script.js"></script>
+    </body>
+</html>
