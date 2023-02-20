@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+main {
+    max-width: 550px;
+    margin: 20px auto;
+    background-image: linear-gradient(45deg, rgba(238, 130, 238, 0.585), rgba(137, 43, 226, 0.585));
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 10px 30px rgba(238, 130, 238, 0.585);
+}
+
+#title {
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3.5em;
+    text-shadow: 2px 1px 3px rgb(255, 253, 253);
+}
+
+#imagem {
+    text-align: center;
+}
+
+#img {
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.476);
+    width: 150px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    text-align: center;
+}
+
+input[type= 'button'] {
+    width: 120px;
+    height: 35px;
+    border-radius: 10px;
+    border-color: white;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-family:'Courier New', Courier, monospace;
+    font-style: italic;
+    text-shadow: 0px 0px 3px blueviolet;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.568);
+    transition: 0.3s;
+}
+
+input[type= 'button']:hover {
+    border-color: rgba(255, 255, 255, 0.681);
+    background-color: rgba(255, 255, 255, 0.681);
+    transition: 0.3s;
+}
+
+#auto {
+    position: fixed;
+    top: 20vh;
+    left: calc(50vw - 220px);
+}
+
+#off {
+    position: fixed;
+    top: 20vh;
+    left: calc(50vw + 100px);
+}
