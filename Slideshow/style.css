@@ -171,3 +171,60 @@ footer p a:hover {
     color: rgb(0, 107, 104);
     transition: 0.5s;
 }
+
+@media screen and (max-width: 600px) {
+    main #slide {
+        width: 80vw;
+        height: 30vh;
+    }
+
+    #img-cont {
+        width: 80vw;
+        height: 30vh;
+    }
+
+    #image-item {
+        width: 80vw;
+        height: 30vh;
+    }
+    
+    #image-item img {
+        width: 80vw;
+        height: 30vh
+    }
+
+    nav {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    nav #auto {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    nav #off {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main #slide {
+        width: 80vw;
+    }
+
+    #img-cont {
+        width: 80vw;
+    }
+
+    #image-item {
+        width: 80vw;
+    }
+
+    #image-item img {
+        width: 80vw;
+    }
+}
