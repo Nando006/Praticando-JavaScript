@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ body {
+    background: lightcyan url(./img/bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+ }
+
+ header {
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(59, 46, 33, 0.867);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.245);
+ }
+
+ header h1 {
+    font-size: 3em;
+    color: white;
+    text-shadow: 0px 1px 2px black;
+    font-variant: small-caps;
+    letter-spacing: 3px;
+ }
+
+ main {
+    padding: 10px;
+    text-align: center;
+    width: 95vw;
+    background-color:rgba(59, 46, 33, 0.867);
+    margin: 10vh auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.444);
+ }
+
+ article#calculadora {
+    background-color: yellow;
+    width: 240px;
+    height: 380px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.413);
+ }
+
+ section#display {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 10px;
+    background-color: black;
+    width: 99%;
+    margin: auto;
+    border-radius: 5px;
+    height: 60px;
+    color: white;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+ }
+
+section#buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.button {
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.4em;
+    cursor: pointer;
+    user-select: none;
+    width: 50px;
+    height: 50px;
+    transition: 0.3s;
+ }
+
+ .button:hover {
+    background-color: rgba(0, 0, 0, 0.879);
+    border: 1px solid white;
+    transition: 0.3s;
+ }
